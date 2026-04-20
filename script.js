@@ -16,9 +16,11 @@ function getComputerChoice() {
 }
 
 function playRound(humanChoice) {
+  if (currentRound > maxRounds) return;
+
   const computerChoice = getComputerChoice();
 
-  resultDiv.className = ""; // reset styles
+  resultDiv.className = "";
 
   if (humanChoice === computerChoice) {
     resultDiv.textContent = `Tie! Both chose ${humanChoice}`;
@@ -40,14 +42,14 @@ function playRound(humanChoice) {
   humanScoreSpan.textContent = humanScore;
   computerScoreSpan.textContent = computerScore;
 
-  if (currentRound > maxRounds) {
+  if (currentRound === maxRounds) {
     endGame();
+    return;
   }
 
   currentRound++;
   roundDisplay.textContent = `Round ${currentRound} of ${maxRounds}`;
 }
-
 function endGame() {
   buttons.forEach((btn) => (btn.disabled = true));
 
