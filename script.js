@@ -56,6 +56,9 @@ function endGame() {
   if (humanScore > computerScore) {
     resultDiv.textContent = "🎉 You won the game!";
     resultDiv.className = "win";
+  } else if (computerScore === humanScore) {
+    resultDiv.textContent = "🤝 It's a tie!";
+    resultDiv.className = "tie";
   } else {
     resultDiv.textContent = "💻 Computer won the game!";
     resultDiv.className = "lose";
