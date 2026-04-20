@@ -1,36 +1,48 @@
-# Rock Paper Scissors
+# ✊📄✂️ Rock Paper Scissors
 
-A simple Rock Paper Scissors game built with JavaScript and played in the browser console.
+A fun, interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript.  
+Play against the computer in a polished browser-based UI with scoring, rounds, and replay functionality.
 
-## Features
+---
 
-- Human vs Computer
-- Random computer choices
-- Prompt input for player choice
-- 5 round gameplay
-- Score tracking
-- Final winner announced
+## 🎮 Features
 
-## Technologies Used
+- 👤 Human vs Computer gameplay
+- 🎲 Random computer choices
+- 🧠 Real-time score tracking
+- 🔁 5-round match system
+- 🏆 Final winner announcement
+- 🔄 Replay button to restart the game
+- 🎨 Warm, modern UI design with animations
 
-- HTML
-- JavaScript
-- Git
+---
 
-## How to Run
+## 🛠️ Technologies Used
 
-1. Open the project folder.
-2. Open `index.html` in your browser.
-3. Open browser Developer Tools.
-4. Go to the Console tab.
-5. Play the game through prompts.
+- HTML5
+- CSS3 (Flexbox, gradients, animations)
+- JavaScript (DOM manipulation, game logic)
+- Git & GitHub
 
-## Project Structure
+---
+
+## 🚀 How to Run
+
+1. Clone or download the project
+2. Open the folder
+3. Open `index.html` in your browser
+4. Click Rock, Paper, or Scissors to play
+
+No installation required.
+
+---
+
+## 📁 Project Structure
 
 ```bash
 rock-paper-scissors/
-│── index.html
-│── script.js
-│── README.md
-
+│── index.html      # Game structure
+│── styles.css      # Styling and UI design
+│── script.js       # Game logic
+│── README.md       # Project documentation
 ```
