@@ -3,9 +3,12 @@ const resultDiv = document.getElementById("result");
 const humanScoreSpan = document.getElementById("human-score");
 const computerScoreSpan = document.getElementById("computer-score");
 const replayBtn = document.getElementById("replay-btn");
+const roundDisplay = document.getElementById("round");
 
 let humanScore = 0;
 let computerScore = 0;
+let currentRound = 1;
+const maxRounds = 5;
 
 function getComputerChoice() {
   const choices = ["rock", "paper", "scissors"];
@@ -37,9 +40,12 @@ function playRound(humanChoice) {
   humanScoreSpan.textContent = humanScore;
   computerScoreSpan.textContent = computerScore;
 
-  if (humanScore === 5 || computerScore === 5) {
+  if (currentRound > maxRounds) {
     endGame();
   }
+
+  currentRound++;
+  roundDisplay.textContent = `Round ${currentRound} of ${maxRounds}`;
 }
 
 function endGame() {
@@ -68,6 +74,9 @@ function resetGame() {
 
   buttons.forEach((btn) => (btn.disabled = false));
   replayBtn.style.display = "none";
+
+  currentRound = 1;
+  roundDisplay.textContent = `Round 1 of ${maxRounds}`;
 }
 
 buttons.forEach((button) => {

@@ -96,3 +96,9 @@ h1 {
 #replay-btn:hover {
   background: #0099cc;
 }
+
+#round {
+  margin-bottom: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
